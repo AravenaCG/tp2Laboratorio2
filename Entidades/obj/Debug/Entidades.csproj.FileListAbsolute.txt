@@ -12,3 +12,7 @@ C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\Entidades\obj\Debug\Entidades.d
 C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\Entidades\obj\Debug\Entidades.pdb
 C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\Entidades\bin\Debug\Entidades.dll
 C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\Entidades\bin\Debug\Entidades.dll
+C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\Entidades\obj\Debug\Entidades.dll
+C:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\Entidades\obj\Debug\Entidades.pdb

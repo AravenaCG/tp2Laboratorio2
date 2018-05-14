@@ -23,8 +23,8 @@ namespace Entidades
         #region "Constructores"
         public Changuito()
         {
-            this._productos = new List<Producto>();
-            _productos.Capacity= _espacioDisponible;
+            this._productos = new List<Producto>(_espacioDisponible);
+          //  _productos.Capacity= _espacioDisponible;
         }
         public Changuito(int espacioDisponible):this()
         { 
@@ -64,28 +64,26 @@ namespace Entidades
             {
                 switch (tipo)
                 {
-                    case ETipo.Dulce:
-                        for (int i = 0; i < c._productos.Count; i++)
+                    case ETipo.Snacks:
+                        if (v is Snacks)
                         {
-                            if (c._productos[i] is Dulce)
-                            {
-                                sb.AppendLine(v.Mostrar());
-                                Console.Clear();
-                            }
+                            sb.AppendLine(((Snacks)v).Mostrar());
                         }
-                        
+                        break;
+                    case ETipo.Dulce:
+                        if (v is Dulce)
+                        {
+                            sb.AppendLine(((Dulce)v).Mostrar());
+                        }
                         break;
                     case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
-                        Console.Clear();
-                        break;
-                    case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
-                        Console.Clear();
+                        if (v is Leche)
+                        {
+                            sb.AppendLine(((Leche)v).Mostrar());
+                        }
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
-                        Console.Clear();
                         break;
                 }
             }
