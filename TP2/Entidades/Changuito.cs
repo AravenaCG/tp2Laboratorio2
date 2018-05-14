@@ -10,7 +10,7 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public sealed class ChanguitoC:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\TP2\Entidades\Changuito.cs
+    public sealed class Changuito
     {
         private List<Producto> _productos;
         private int _espacioDisponible;
