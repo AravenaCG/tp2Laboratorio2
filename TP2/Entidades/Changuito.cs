@@ -10,7 +10,7 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public sealed class Changuito
+    public sealed class ChanguitoC:\Users\hunte\Downloads\tp2\Esquema-TP-02\TP-02\tp2Laboratorio2\TP2\Entidades\Changuito.cs
     {
         private List<Producto> _productos;
         private int _espacioDisponible;
@@ -101,7 +101,7 @@ namespace Entidades
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-          
+
             bool existe = false;
             foreach (Producto v in c._productos)
             {
@@ -114,7 +114,7 @@ namespace Entidades
             }
                 if(existe == false)
                 {
-                    if (c._productos.Count <= c._productos.Capacity)
+                    if (c._productos.Count < c._espacioDisponible)
                     {
                         c._productos.Add(p);
                     }
