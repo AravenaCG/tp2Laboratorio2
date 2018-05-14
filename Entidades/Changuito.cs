@@ -119,6 +119,10 @@ namespace Entidades
                         c._productos.Add(p);
                     }
                 }
+                if (c._productos.Count > c._espacioDisponible)
+                {
+                    c._productos.TrimExcess();
+                }
             return c;
         }
         /// <summary>
