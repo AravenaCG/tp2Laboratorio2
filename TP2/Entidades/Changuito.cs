@@ -12,6 +12,7 @@ namespace Entidades
     /// </summary>
     public sealed class Changuito
     {
+        #region Atributos
         private List<Producto> _productos;
         private int _espacioDisponible;
 
@@ -19,9 +20,11 @@ namespace Entidades
         {
             Dulce, Leche, Snacks, Todos
         }
+        #endregion
+
 
         #region "Constructores"
-        public Changuito()
+        private Changuito()
         {
             this._productos = new List<Producto>(_espacioDisponible);
           //  _productos.Capacity= _espacioDisponible;
@@ -29,12 +32,11 @@ namespace Entidades
         public Changuito(int espacioDisponible):this()
         { 
             this._espacioDisponible = espacioDisponible;
-            _productos.Capacity = _espacioDisponible;
-         //   this._productos = new List<Producto>(espacioDisponible);
+            
         }
         #endregion
 
-        #region "Sobrecargas"
+        #region "Sobrecarga Metodo"
         /// <summary>
         /// Muestro la concecionaria y TODOS los Productos
         /// </summary>
@@ -92,7 +94,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Operadores"
+        #region Sobrecarga Operadores
         /// <summary>
         /// Agregará un elemento a la lista
         /// </summary>

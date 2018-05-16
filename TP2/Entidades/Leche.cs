@@ -11,15 +11,18 @@ namespace Entidades
 {
     public class Leche : Producto
     {
+        #region Atributos
         public enum ETipo { Entera, Descremada }
-        ETipo _tipo;
-
+        private ETipo _tipo;
+        #endregion
+        #region Constructores
         /// <summary>
         /// Por defecto, TIPO será ENTERA
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="patente"></param>
         /// <param name="color"></param>
+        /// 
         public Leche(EMarca marca, string patente, ConsoleColor color)
             : base(patente, marca, color)
         {
@@ -33,7 +36,9 @@ namespace Entidades
             _tipo = tipo;
 
         }
+        #endregion
 
+        #region Propiedades
         /// <summary>
         /// Las leches tienen 20 calorías
         /// </summary>
@@ -44,6 +49,10 @@ namespace Entidades
                 return 20;
             }
         }
+        #endregion
+
+        #region Metodos
+
 
         public override  string Mostrar()
         {
@@ -60,5 +69,7 @@ namespace Entidades
 
             return sb.ToString();
         }
+
+        #endregion
     }
 }

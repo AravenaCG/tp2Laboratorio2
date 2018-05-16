@@ -9,10 +9,14 @@ namespace Entidades
 {
     public class Snacks : Producto
     {
+        #region Constructor
         public Snacks(EMarca marca, string patente, ConsoleColor color)
             : base(patente, marca, color)
         {
         }
+        #endregion
+
+        #region Propiedades
         /// <summary>
         /// Los snacks tienen 104 calorías
         /// </summary>
@@ -23,7 +27,9 @@ namespace Entidades
                 return 104;
             }
         }
+        #endregion 
 
+        #region Metodos
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -35,5 +41,6 @@ namespace Entidades
 
             return sb.ToString();
         }
+        #endregion
     }
 }

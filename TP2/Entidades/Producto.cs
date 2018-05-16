@@ -12,6 +12,7 @@ namespace Entidades
     /// </summary>
     public abstract class Producto
     {
+        #region Atributos
         public enum EMarca
         {
             Serenisima, Campagnola, Arcor, Ilolay, Sancor, Pepsico
@@ -20,7 +21,10 @@ namespace Entidades
         protected EMarca _marca;
         protected string _codigoDeBarras;
         protected ConsoleColor _colorPrimarioEmpaque;
+        #endregion
 
+
+        #region Constructores
         public Producto(string codigoDeBarra, EMarca marca, ConsoleColor color)
         {
             this._codigoDeBarras = codigoDeBarra;
@@ -28,12 +32,16 @@ namespace Entidades
             this._marca = marca;
 
         }
+        #endregion
 
+        #region Propiedades
         /// <summary>
         /// ReadOnly: Retornará la cantidad de ruedas del vehículo
         /// </summary>
         public abstract short CantidadCalorias { get; }
+        #endregion
 
+        #region Metodos
         /// <summary>
         /// Publica todos los datos del Producto.
         /// </summary>
@@ -43,7 +51,9 @@ namespace Entidades
             string mostrar = (string)this;
             return mostrar;
         }
+        #endregion
 
+        #region Sobrecargas
         public static explicit operator string(Producto p)
         {
             StringBuilder sb = new StringBuilder();
@@ -90,5 +100,6 @@ namespace Entidades
 
             return answ;
         }
+        #endregion
     }
 }
